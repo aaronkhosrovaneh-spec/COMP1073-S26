@@ -1,0 +1,106 @@
+body{
+    background: white;
+    font-family: Arial, sans-serif;
+}
+
+.toy{
+    width: 1100px;
+    margin: 40px auto;
+    display: flex;
+}
+
+.leftPage{
+    width: 600px;
+    background: yellow;
+    border-radius: 20px 0 0 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.column{
+    width: 100px;
+    border-radius: 12px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+.purple{background: purple;}
+.blue{background: blue;}
+.green{background: green;}
+.orange{background: orange;}
+.pink{background: pink;}
+
+.column h2{
+    margin: 0;
+    font-size: 34px;
+}
+
+.column button{
+    margin-top: 15px;
+    width: 90%;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.column p{
+    margin-top: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.spine{
+    width: 60px;
+    background: blue;
+    border-radius: 20px;
+}
+
+.rightPage{
+    width: 350px;
+    background: yellow;
+    border-radius: 0 20px 20px 0;
+    padding: 30px;
+    text-align: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.dot{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.purpleDot{background: purple;}
+.blueDot{background: blue;}
+.greenDot{background: green;}
+.orangeDot{background: orange;}
+.pinkDot{background: pink;}
+
+.storyButton{
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 12px;
+    background: red;
+    color: white;
+    cursor: pointer;
+}
+
+#story{
+    margin-top: 30px;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    min-height: 120px;
+    font-size: 22px;
+}
