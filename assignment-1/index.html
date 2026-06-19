@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>See 'N' Say Storymaker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="toy">
+
+    <!-- Where user selects story elements -->
+    <div class="leftPage">
+        
+        <!-- Character selection column -->
+        <div class="column purple">
+            <h2>1</h2>
+            <button onclick="nextCharacter()">Character</button>
+            <p id="characterChoice">The dog</p>
+        </div>
+
+        <!-- Action selection column -->
+        <div class="column blue">
+            <h2>2</h2>
+            <button onclick="nextAction()">Action</button>
+            <p id="actionChoice">jumped over</p>
+        </div>
+
+        <!-- Object selection column -->
+        <div class="column green">
+            <h2>3</h2>
+            <button onclick="nextObject()">Object</button>
+            <p id="objectChoice">the fence</p>
+        </div>
+
+        <!-- Place selection column -->
+        <div class="column orange">
+            <h2>4</h2>
+            <button onclick="nextPlace()">Place</button>
+            <p id="placeChoice">at the park</p>
+        </div>
+
+        <!-- Ending selection column -->
+        <div class="column pink">
+            <h2>5</h2>
+            <button onclick="nextEnding()">Ending</button>
+            <p id="endingChoice">before lunch.</p>
+        </div>
+
+    </div>
+
+    <!-- Spine separating left and right pages -->
+    <div class="spine"></div>
+
+    <!-- Displays dots and final story output -->
+    <div class="rightPage">
+
+        <!-- Dots matching each column -->
+        <div class="buttons">
+            <div class="dot purpleDot"></div>
+            <div class="dot blueDot"></div>
+            <div class="dot greenDot"></div>
+            <div class="dot orangeDot"></div>
+            <div class="dot pinkDot"></div>
+        </div>
+
+        <!-- Button to generate full story from selections -->
+        <button class="storyButton" onclick="makeStory()">
+            Show Story
+        </button>
+
+        <!-- Area where final story will appear -->
+        <div id="story"></div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
