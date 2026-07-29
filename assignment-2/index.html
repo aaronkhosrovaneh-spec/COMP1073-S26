@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Makes the page responsive on different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pizza Order Form</title>
+
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- defer waits until the HTML document has been parsed -->
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <main class="container">
+
+        <!-- Page heading -->
+        <h1>Pizza Palace</h1>
+        <p class="subtitle">Create your perfect pizza!</p>
+
+        <!-- Student information is dynamically added by JavaScript -->
+        <p id="studentInfo"></p>
+
+        <!-- Pizza order form -->
+        <form id="pizzaForm">
+
+            <!-- Customer information -->
+            <fieldset>
+                <legend>Customer Information</legend>
+
+                <label for="customerName">Name:</label>
+                <input
+                    type="text"
+                    id="customerName"
+                    name="customerName"
+                    required
+                    minlength="2"
+                >
+
+                <label for="email">Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                >
+            </fieldset>
+
+            <!-- Pizza size and crust options -->
+            <fieldset>
+                <legend>Pizza Details</legend>
+
+                <label for="size">Pizza Size:</label>
+                <select id="size" name="size" required>
+                    <option value="">-- Select a Size --</option>
+                    <option value="Small">Small - 10"</option>
+                    <option value="Medium">Medium - 12"</option>
+                    <option value="Large">Large - 14"</option>
+                    <option value="Extra Large">Extra Large - 16"</option>
+                </select>
+
+                <p>Crust Type:</p>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="crust"
+                        value="Classic"
+                        required
+                    >
+                    Classic
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="crust"
+                        value="Thin"
+                    >
+                    Thin Crust
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="crust"
+                        value="Stuffed"
+                    >
+                    Stuffed Crust
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="crust"
+                        value="Gluten-Free"
+                    >
+                    Gluten-Free
+                </label>
+            </fieldset>
+
+            <!-- Sauce options -->
+            <fieldset>
+                <legend>Sauce</legend>
+
+                <label for="sauce">Choose a Sauce:</label>
+                <select id="sauce" name="sauce" required>
+                    <option value="">-- Select a Sauce --</option>
+                    <option value="Classic Tomato">Classic Tomato</option>
+                    <option value="Spicy Tomato">Spicy Tomato</option>
+                    <option value="BBQ">BBQ</option>
+                    <option value="Garlic Cream">Garlic Cream</option>
+                    <option value="Pesto">Pesto</option>
+                </select>
+            </fieldset>
+
+            <!-- Topping options -->
+            <fieldset>
+                <legend>Toppings</legend>
+
+                <p>Select your toppings:</p>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="toppings"
+                        value="Pepperoni"
+                    >
+                    Pepperoni
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="toppings"
+                        value="Mushrooms"
+                    >
+                    Mushrooms
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="toppings"
+                        value="Green Peppers"
+                    >
+                    Green Peppers
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="toppings"
+                        value="Onions"
+                    >
+                    Onions
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="toppings"
+                        value="Bacon"
+                    >
+                    Bacon
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="toppings"
+                        value="Extra Cheese"
+                    >
+                    Extra Cheese
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="toppings"
+                        value="Black Olives"
+                    >
+                    Black Olives
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="toppings"
+                        value="Pineapple"
+                    >
+                    Pineapple
+                </label>
+            </fieldset>
+
+            <!-- Additional order options -->
+            <fieldset>
+                <legend>Additional Options</legend>
+
+                <label for="quantity">Quantity:</label>
+                <input
+                    type="number"
+                    id="quantity"
+                    name="quantity"
+                    min="1"
+                    max="10"
+                    value="1"
+                    required
+                >
+            </fieldset>
+
+            <!-- Submit button -->
+            <button type="submit">Place Order</button>
+
+        </form>
+
+        <!-- Order result will be displayed here -->
+        <section id="orderResult" class="order-result" aria-live="polite"></section>
+
+    </main>
+</body>
+</html>
