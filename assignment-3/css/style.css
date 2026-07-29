@@ -1,0 +1,190 @@
+/* Apply box sizing to all elements */
+
+* {
+  box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: black;
+    color: white;
+    min-height: 100vh;
+}
+
+/* Main content container */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+/* Header section */
+.page-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    color: white;
+}
+
+/* Dynamically generated student information */
+#studentInfo {
+    font-weight: bold;
+    color: lightblue;
+}
+
+/* Date selection controls */
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: black;
+    border-radius: 12px;
+}
+
+/* Input field */
+input[type="date"] {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+/* Buttons */
+button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    background: blue;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background: blue;
+}
+
+/* Main APOD card */
+.apod-card {
+    background: black;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Image/video area */
+.media-container {
+    width: 100%;
+    background: black;
+}
+
+/* APOD image */
+#apodImage {
+    display: block;
+    width: 100%;
+    max-height: 650px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+/* APOD content */
+.apod-content {
+    padding: 25px;
+}
+
+.apod-content h2 {
+    margin-top: 0;
+    color: lightblue;
+}
+
+/* Date text */
+.date {
+    font-weight: bold;
+    color: #a5b4fc;
+}
+
+/* Explanation text */
+#apodExplanation {
+    line-height: 1.7;
+    color: white;
+}
+
+/* Copyright information */
+#apodCopyright {
+    font-size: 0.9rem;
+    color: gray;
+}
+
+/* Link to original media */
+#mediaLink {
+    display: inline-block;
+    margin-top: 10px;
+    color: lightblue;
+    font-weight: bold;
+}
+
+/* Loading and error messages */
+#errorMessage {
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    background: maroon;
+    color: white;
+}
+
+#loadingMessage {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Hide elements when necessary */
+.hidden {
+    display: none;
+}
+
+/* Footer */
+.page-footer {
+    text-align: center;
+    margin-top: 35px;
+    padding-top: 20px;
+    border-top: 1px solid black;
+    color: gray;
+}
+
+.page-footer a {
+    color: lightblue;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 600px) {
+
+.page-header h1 {
+    font-size: 2rem;
+}
+
+.controls {
+    flex-direction: column;
+}
+
+input[type="date"],
+button {
+    width: 100%;
+}
+
+}
