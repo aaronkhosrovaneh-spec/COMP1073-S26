@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Makes the page responsive on different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NASA Astronomy Picture of the Day</title>
+
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- defer makes sure JavaScript runs after the HTML is loaded -->
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <main class="container">
+        <!-- Page heading -->
+        <header class="page-header">
+            <h1>NASA Astronomy Picture of the Day</h1>
+            <p>Explore fascinating images from space using NASA's Astronomy Picture of the Day API.</p>
+            <!-- Student information is dynamically added using JavaScript -->
+            <p id="studentInfo"></p>
+        </header>
+
+        <!-- Controls for selecting a date -->
+        <section class="controls">
+            <label for="datePicker">Choose a date:</label>
+            <input type="date" id="datePicker">
+            <button id="searchButton">View Picture</button>
+            <button id="todayButton">Today's Picture</button>
+        </section>
+
+        <!-- Loading message -->
+        <p id="loadingMessage" class="hidden">Loading NASA's Astronomy Picture of the Day...</p>
+
+        <!-- Error message -->
+        <p id="errorMessage" class="error hidden"></p>
+
+        <!-- API results are dynamically inserted here -->
+        <section id="apodResult" class="apod-card hidden">
+
+            <div class="media-container">
+                <!-- Image or video will be inserted here by JavaScript -->
+                <img id="apodImage" src="" alt="">
+            </div>
+
+            <div class="apod-content">
+                <h2 id="apodTitle"></h2>
+                <p id="apodDate" class="date"></p>
+                <p id="apodExplanation"></p>
+                <p id="apodCopyright"></p>
+                <!-- Link to the original NASA media -->
+                <a
+                    id="mediaLink"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    View Original Media
+                </a>
+            </div>
+        </section>
+
+        <!-- API documentation link required by the assignment -->
+        <footer class="page-footer">
+
+            <p>
+                API used:
+                <a
+                    href="https://api.nasa.gov/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    NASA Open APIs Documentation
+                </a>
+            </p>
+
+            <p>This page was created as a JavaScript API demonstration using NASA's Astronomy Picture of the Day API.</p>
+        </footer>
+    </main>
+</body>
+</html>
