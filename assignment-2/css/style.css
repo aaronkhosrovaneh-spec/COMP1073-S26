@@ -1,0 +1,148 @@
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Main content container */
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Page heading */
+h1 {
+    margin-bottom: 5px;
+    text-align: center;
+    color: #c0392b;
+}
+
+.subtitle {
+    margin-top: 0;
+    text-align: center;
+    color: #666;
+}
+
+/* Dynamically generated student information */
+#studentInfo {
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    background-color: #f9e79f;
+    border-radius: 6px;
+}
+
+/* Form styling */
+fieldset {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: #c0392b;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/* Text inputs, select boxes, and textarea */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Allow the textarea to resize vertically */
+textarea {
+    resize: vertical;
+}
+
+/* Radio buttons and checkboxes */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Labels containing radio buttons or checkboxes */
+label:has(input[type="radio"]),
+label:has(input[type="checkbox"]) {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+/* Button styling */
+button {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    background-color: #c0392b;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #922b21;
+}
+
+/* Order result styling */
+.order-result {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #eafaf1;
+    border: 2px solid #27ae60;
+}
+
+.order-result h2 {
+    margin-top: 0;
+    color: #1e8449;
+}
+
+.order-result p {
+    margin: 8px 0;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    label:has(input[type="radio"]),
+    label:has(input[type="checkbox"]) {
+        display: block;
+    }
+}
